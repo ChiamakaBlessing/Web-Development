@@ -1,0 +1,258 @@
+
+@font-face {
+    font-family: "Chiamaka";
+    src:
+      local("Chiamaka"),
+      url("./css/fonts/SofiaPro.ttf") format("truetype"),
+      url("./css/fonts/BrownPro.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  h2, p{
+    font-family: BrownPro, sans-serif;
+  }
+
+body{
+    background: var(--cl-green, #e4f8f7);
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 75%;
+    height: 75%;
+}
+.left-side{
+    width: 100%;
+}
+.right-side{
+    width: 100%;    
+}
+.content{
+    top: 150px;
+    width: 400px;
+    height: 275px;
+    position: relative;
+}
+.reg_form{
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    padding: 2rem;
+    width: 580px;
+    height: 679px;
+    font-family: BrownPro, sans-serif;
+}
+.name, .g_dob, .sub_bmi, .activity,.pwd{
+    display: flex;
+}
+.g_dob, .sub_bmi, .activity,.pwd,.register{
+    margin-top: 1.5em;
+}
+.lsnm, .dob, .hei{
+    padding-left: 10px;
+}
+input{
+    width: 15rem;
+    height: 2rem;
+    appearance: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: rgb(234, 234, 234);
+}
+.select-gender{
+    width: 15.7rem;
+    height: 2.5rem;
+    appearance: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: rgb(234, 234, 234);
+}
+.activty_level{
+    width: 31.6rem;
+    height: 2.5rem;
+    appearance: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: rgb(234, 234, 234);
+    padding-right: 20px;
+}
+.select-level{
+    width: 30.6rem;
+    height: 2.5rem;
+    appearance: none;
+    border-style: none;
+    padding-right: 20px;
+    z-index: 0;
+}
+.select-level:focus{
+    width: 30.6rem;
+    height: 2.5rem;
+    appearance: none;
+    border-style: none;
+    outline: none;
+    padding-right: 20px;
+    z-index: 0;
+}
+.down{
+    padding-left:0px;
+    position:relative;
+    z-index: 5;
+}
+.register{
+    background-color: #2EC4B6;
+    text-align: center;
+    padding:20px;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.content-a{
+    color: #737373;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 156.25% */
+    top:0px;
+    width:100vw;
+    height:100%px;
+    position: relative;
+    display:none
+}
+.password{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #e4f8f7;
+}
+.fa-eye{
+    padding-right: 10px;
+}
+.password input{
+    border-style: none;
+}
+@media screen and (max-width: 480px) {
+    .container{
+        display:block;
+        width: 50;
+        height: 100%;
+        margin-left: 20px;
+    }
+    section{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .content{
+        color: #737373;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px; /* 156.25% */
+        top:0px;
+        width:100vw;
+        height:100%px;
+        position: relative;
+        }
+    .content-b{
+        color: #737373;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px; /* 156.25% */
+        top:0px;
+        width:100vw;
+        height:100%px;
+        position: relative;
+        display:none;
+        }
+        .content-a{
+            color: #737373;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 25px; /* 156.25% */
+            top:0px;
+            width:100vw;
+            height:100%px;
+            position: relative;
+            display:block;
+            }
+    
+    .name, .g_dob, .sub_bmi, .activity,.pwd{
+        display: block;
+    }
+    .reg_form{
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    padding: 2rem;
+    width: 100%;
+    height:100%;
+    font-family: BrownPro, sans-serif;
+    }
+    .fsnm, .lsnm, .gd, .dob, .wei, .hei, .level, .pass{
+        margin-bottom: 20px;
+    }
+    .lsnm, .dob, .hei{
+        padding-left:0px;
+    }
+    input{
+        width: 80%;
+        height: 2.5rem;
+        appearance: none;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 3px;
+        border-color: rgb(234, 234, 234);
+        font-size: 18px;
+    }
+    .select-gender{
+        width: 80%;
+        height: 2.5rem;
+        appearance: none;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 3px;
+        border-color: rgb(234, 234, 234);
+        font-size: 18px;
+    }
+    .select-level{
+        width: 80%;
+        height: 2.5rem;
+        appearance: none;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 3px;
+        border-color: rgb(234, 234, 234);
+        font-size: 18px;
+    }
+    .register{
+        background-color: #2EC4B6;
+        text-align: center;
+        padding:20px;
+        width: 80%;
+    }
+    .register a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .t-c{
+        text-align: center;
+    }
+  }
